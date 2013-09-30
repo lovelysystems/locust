@@ -1,7 +1,6 @@
 # encoding: utf-8
 
 from setuptools import setup, find_packages, Command
-import sys, os
 
 version = '0.7.0'
 
@@ -16,7 +15,7 @@ class Unit2Discover(Command):
         pass
 
     def run(self):
-        import sys, subprocess
+        import subprocess
         basecmd = ['unit2', 'discover']
         errno = subprocess.call(basecmd)
         raise SystemExit(errno)
