@@ -2,7 +2,7 @@
 
 from setuptools import setup, find_packages, Command
 
-version = '0.7.0'
+version = '0.7.0-ls2'
 
 
 class Unit2Discover(Command):
